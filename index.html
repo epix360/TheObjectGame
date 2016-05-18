@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="container">
+    <h1>The Slap Game</h1>
 <div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title"></h3>
@@ -16,7 +17,12 @@
     <div>Health: <span id="health">100</span></div>
   </div>
   <div class="panel-body">
+    <div class="col-md-4">
     <img id="stick-fig" width="200" height="auto" src="stick-fig.jpg" alt="Stick figure">
+    </div>
+    <div class="col-md-8">
+    <p id="reaction"></p>
+    </div>
   </div>
   <div class="panel-footer"></div>
   <button class="btn btn-primary" onClick="slap()">Slap!</button>
