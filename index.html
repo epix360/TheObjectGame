@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>The Slap Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"></h3>
+    <div>Name: <span id="name">Bad Joe</span></div>
+    <div>Hits: <span id="hits">0</span></div>
+    <div>Health: <span id="health">100</span></div>
+  </div>
+  <div class="panel-body">
+    <img id="stick-fig" width="200" height="auto" src="stick-fig.jpg" alt="Stick figure">
+  </div>
+  <div class="panel-footer"></div>
+  <button class="btn btn-primary" onClick="slap()">Slap!</button>
+  <button class="btn btn-primary" onClick="punch()">Punch!</button>
+  <button class="btn btn-primary" onClick="kick()">Kick!</button>
+</div>
+</div>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    <script src="app.js"></script>
 </body>
 </html>
