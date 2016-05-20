@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>The Slap Game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>The Slap Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container">
     <h1>The Slap Game</h1>
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title"></h3>
-    <div>Name: <span id="name">Bad Joe</span></div>
-    <div>Hits: <span id="hits">0</span></div>
-    <div>Health: <span id="health">100</span></div>
+    <div class="panel panel-default" id="player-panel">
+      <div class="panel-heading">
+        <h3 class="panel-title"></h3>
+        <div>Name: <span id="name">Joe</span></div>
+        <div>Hits: <span id="hits">0</span></div>
+        <div>Health: <span id="health">100</span></div>
+        <div>Items: <span id="item">None</span></div>
+      </div>
+      <div class="panel-body">
+        <div class="col-md-4">
+          <img id="stick-fig" width="200" height="auto" src="stick-fig.jpg" alt="Stick figure">
+        </div>
+        <div class="col-md-8">
+          <p id="reaction"></p>
+        </div>
+      </div>
+      <div class="progress">
+  <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="100"
+  aria-valuemin="0" aria-valuemax="100" style="width:100%">
   </div>
-  <div class="panel-body">
-    <div class="col-md-4">
-    <img id="stick-fig" width="200" height="auto" src="stick-fig.jpg" alt="Stick figure">
-    </div>
-    <div class="col-md-8">
-    <p id="reaction"></p>
+</div>
+      <div class="panel-footer">
+        <div class="col-xs-12">
+        <button id="slapButton" class="btn btn-primary">Slap!</button>
+        <button id="punchButton" class="btn btn-primary">Punch!</button>
+        <button id="kickButton" class="btn btn-primary">Kick!</button>
+        <button id="itemButton" class="btn btn-success">Add Item</button>
+        <button id="resetButton" class="btn btn-danger play-again">Reset</button>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="panel-footer"></div>
-  <button class="btn btn-primary" onClick="slap()">Slap!</button>
-  <button class="btn btn-primary" onClick="punch()">Punch!</button>
-  <button class="btn btn-primary" onClick="kick()">Kick!</button>
-  <button class="btn btn-danger play-again" onclick="reset()">Reset</button>
-</div>
-</div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
-    <script src="app.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
