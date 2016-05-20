@@ -11,12 +11,13 @@
 <body>
   <div class="container">
     <h1>The Slap Game</h1>
-    <div class="panel panel-default">
+    <div class="panel panel-default" id="player-panel">
       <div class="panel-heading">
         <h3 class="panel-title"></h3>
-        <div>Name: <span id="name">Bad Joe</span></div>
+        <div>Name: <span id="name">Joe</span></div>
         <div>Hits: <span id="hits">0</span></div>
         <div>Health: <span id="health">100</span></div>
+        <div>Items: <span id="item">None</span></div>
       </div>
       <div class="panel-body">
         <div class="col-md-4">
@@ -32,10 +33,13 @@
   </div>
 </div>
       <div class="panel-footer">
-        <button class="btn btn-primary" onClick="slap()">Slap!</button>
-        <button class="btn btn-primary" onClick="punch()">Punch!</button>
-        <button class="btn btn-primary" onClick="kick()">Kick!</button>
-        <button class="btn btn-danger play-again" onclick="reset()">Reset</button>
+        <div class="col-xs-12">
+        <button id="slapButton" class="btn btn-primary">Slap!</button>
+        <button id="punchButton" class="btn btn-primary">Punch!</button>
+        <button id="kickButton" class="btn btn-primary">Kick!</button>
+        <button id="itemButton" class="btn btn-success">Add Item</button>
+        <button id="resetButton" class="btn btn-danger play-again">Reset</button>
+        </div>
       </div>
     </div>
   </div>
